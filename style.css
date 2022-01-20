@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Barre Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  opacity: 0.96;
+  padding: 10px;
+  height: 100px;
+}
+#conteneur1:target {
+  padding-top: 150px;
+  margin-top: -100px;
+}
+#conteneur2:target {
+  padding-top: 150px;
+  margin-top: -100px;
+}
+#conteneur3:target {
+  padding-top: 150px;
+  margin-top: -100px;
+}
+#conteneur4:target {
+  padding-top: 150px;
+  margin-top: -100px;
+}
+#conteneur5:target {
+  padding-top: 150px;
+  margin-top: -100px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+nav li a {
+  text-decoration: none;
+  padding-left: 50px;
+  justify-items: center;
+  color: rgb(120, 120, 120);
+  font-size: 16px;
+  cursor: pointer;
+}
+nav li a img {
+  padding-right: 50px;
+}
+nav .Menu a:hover {
+  color: #ff671f;
+}
+/* Barre Navigation FIN */
+
+/* Boxe recherche */
+.search_wrap .search_box {
+  position: relative;
+  width: 200px;
+  height: 35px;
+  margin-left: 100px;
+  border: 1px solid rgb(200, 200, 200);
+}
+.search_wrap .search_box .input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  outline: none;
+  border: 0;
+}
+.search_wrap .search_box .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  background: #ff671f;
+  z-index: 1;
+  cursor: pointer;
+}
+.search_wrap .search_box .btn.btn_common .fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+}
+/* Boxe recherche FIN */
+
+#textSlide {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(/assets/images/ltco-office-Marina.jpg) no-repeat fixed 50% 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 590px;
+}
+
+#textSlide2 {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(/assets/images/ltco-office-Marina.jpg) no-repeat fixed 50% 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 400px;
+}
+
+#textSlide h1 {
+  margin-top: center;
+  font-family: "Noto Sans KR", serif;
+  font-size: 70px;
+  color: #ffffff;
+}
+#textSlide2 h1 {
+  margin-top: center;
+  font-family: "Noto Sans KR", serif;
+  font-size: 70px;
+  color: #ffffff;
+}
+#textSlide h4 {
+  margin-top: 10px;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+#textSlide button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #ff671f;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-bottom: 30px;
+  outline: none;
+  font-size: 20px;
+  font-family: "Noto Sans KR", serif;
+  cursor: pointer;
+}
+#textSlide button:hover {
+  background: #0000004a;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 30px;
+}
+hr {
+  background: #ff671f;
+  border: none;
+  height: 3px;
+  width: 80px;
+  margin-top: 10px;
+}
+p {
+  padding-top: 10px;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+#conteneur1 {
+  display: flex;
+  flex-direction: columns;
+  align-items: center;
+  padding: 50px 0;
+}
+.texte1 {
+  padding-left: 550px;
+  padding-right: 50px;
+  text-align: justify;
+}
+.texte11 {
+  padding-left: 550px;
+  padding-right: 500px;
+  text-align: justify;
+}
+.image1 {
+  padding-right: 500px;
+}
+button {
+  margin-top: 50px;
+  padding: 10px 50px;
+  background-color: #ff671f;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-bottom: 30px;
+  outline: none;
+  font-size: 16px;
+  font-family: "Noto Sans KR", serif;
+  cursor: pointer;
+}
+button:hover {
+  background: #ff661f00;
+  border: 1px solid #ff671f;
+  color: #ff671f;
+}
+
+#conteneur2 {
+  display: flex;
+  flex-direction: columns;
+  align-items: center;
+  padding: 50px 0;
+  background: #ff661f14;
+}
+.texte2 {
+  padding-left: 50px;
+  padding-right: 500px;
+  text-align: justify;
+}
+.image2 {
+  padding-left: 550px;
+  margin-top: -20px;
+}
+
+.texte3 {
+  padding-left: 550px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.Partenaires {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #fff; */
+}
+
+.image3 {
+  padding: 0 45px;
+}
+button2 {
+  margin-left: 550px;
+  margin-top: 50px;
+  padding: 10px 50px;
+  background-color: #ff671f;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-bottom: 150px;
+  outline: none;
+  font-size: 16px;
+  font-family: "Noto Sans KR", serif;
+  cursor: pointer;
+}
+button2:hover {
+  background: #ff661f00;
+  border: 1px solid #ff671f;
+  color: #ff671f;
+}
+
+#conteneur3 {
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+#conteneur4 {
+  margin-bottom: 0px;
+  background: #ff661f14;
+}
+
+#BoxNews {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.titreBox1 {
+  background: #fff;
+  padding: 20px 0;
+}
+
+.texte4 {
+  padding-left: 550px;
+  padding-right: 50px;
+  text-align: justify;
+  padding-top: 50px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "Noto Sans Display", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+h4 {
+  font-size: 14px;
+  font-family: "Noto Sans Display", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.content1 {
+  padding-left: 60px;
+}
+.content1 hr {
+  background: #72727251;
+  border: none;
+  height: 1px;
+  width: 230px;
+  margin-left: 8px;
+  margin-top: 30px;
+}
+
+.content2 hr {
+  background: #72727251;
+  border: none;
+  height: 1px;
+  width: 200px;
+  margin-left: 8px;
+  margin-top: 30px;
+}
+
+.content3 hr {
+  background: #72727251;
+  border: none;
+  height: 1px;
+  width: 200px;
+  margin-left: 8px;
+  margin-top: 30px;
+}
+.texte5 h3 {
+  text-align: left;
+  margin-top: 0;
+}
+.texte5 {
+  padding-left: 550px;
+  padding-right: 50px;
+  text-align: justify;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+footer {
+  border-top: 1px solid grey;
+  background: rgb(230, 230, 230);
+  padding-bottom: 30px;
+}
+footer p {
+  font-size: 13px;
+  font-family: "Noto Sans Display", sans-serif;
+  color: rgb(106, 106, 106);
+  padding: 35px 0 20px 0;
+  margin-left: 550px;
+}
+span {
+  padding-right: 87px;
+}
+.reseaux {
+  margin-left: 550px;
+  font-size: 20px;
+}
+.fab {
+  padding-right: 20px;
+}
+ul p {
+  padding-left: 45px;
+}
+a {
+  color: #ff671f;
+}
+.container2 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  gap: 30px 50px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Photo1 Nom1 Photo2 Nom2"
+    "Biography1 Biography1 Biography2 Biography2"
+    "Photo3 Nom3 Photo4 Nom4"
+    "Biography3 Biography3 Biography4 Biography4";
+}
+
+.Biography2 {
+  grid-area: Biography2;
+}
+
+.Biography1 {
+  grid-area: Biography1;
+}
+
+.Biography3 {
+  grid-area: Biography3;
+}
+
+.Biography4 {
+  grid-area: Biography4;
+}
+
+.Photo1 {
+  grid-area: Photo1;
+}
+
+.Photo2 {
+  grid-area: Photo2;
+}
+
+.Photo3 {
+  grid-area: Photo3;
+  margin-top: 30px;
+}
+
+.Photo4 {
+  grid-area: Photo4;
+  margin-top: 30px;
+}
+
+.Nom1 {
+  grid-area: Nom1;
+  padding-top: 70px;
+}
+
+.Nom2 {
+  grid-area: Nom2;
+  padding-top: 70px;
+}
+
+.Nom3 {
+  grid-area: Nom3;
+}
+
+.Nom4 {
+  grid-area: Nom4;
+}
+
+.container2 {
+  padding: 50px 500px 80px 550px;
+  background-color: #ff661f14;
+}
+h5 {
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+  margin-left: -40px;
+}
+h6 {
+  font-size: 14px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+  margin-left: -40px;
+}
+.Biography1 {
+  text-align: justify;
+}
+.Biography2 {
+  text-align: justify;
+}
+.Biography3 {
+  text-align: justify;
+}
+.Biography4 {
+  text-align: justify;
+}
+.container2 p {
+  font-size: 13px;
+  font-family: "Noto Sans Display", sans-serif;
+}

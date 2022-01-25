@@ -335,7 +335,13 @@ h4 {
   margin-left: 8px;
   margin-top: 30px;
 }
-
+.content1 img {
+  cursor: pointer;
+}
+.content1 h3:hover {
+  color: #ff671f;
+  cursor: pointer;
+}
 .content2 hr {
   background: #72727251;
   border: none;
@@ -405,6 +411,19 @@ a {
     "Biography3 Biography3 Biography4 Biography4";
 }
 
+.container22 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  gap: 30px 50px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Photo1 Nom1 Photo2 Nom2"
+    "Biography1 Biography1 Biography2 Biography2"
+    "Photo3 Nom3 Photo4 Nom4"
+    "Biography3 Biography3 Biography4 Biography4";
+}
+
 .Biography2 {
   grid-area: Biography2;
 }
@@ -424,19 +443,38 @@ a {
 .Photo1 {
   grid-area: Photo1;
 }
+.Photo11 {
+  grid-area: Photo1;
+  filter: grayscale(100%);
+  padding-top: 50px;
+}
 
 .Photo2 {
   grid-area: Photo2;
+}
+.Photo22 {
+  grid-area: Photo2;
+  filter: grayscale(100%);
 }
 
 .Photo3 {
   grid-area: Photo3;
   margin-top: 30px;
 }
+.Photo33 {
+  grid-area: Photo3;
+  filter: grayscale(100%);
+  padding-top: 50px;
+}
 
 .Photo4 {
   grid-area: Photo4;
   margin-top: 30px;
+}
+.Photo44 {
+  grid-area: Photo4;
+  filter: grayscale(100%);
+  padding-top: 50px;
 }
 
 .Nom1 {
@@ -451,16 +489,24 @@ a {
 
 .Nom3 {
   grid-area: Nom3;
+  padding-top: 100px;
 }
 
 .Nom4 {
   grid-area: Nom4;
+  padding-top: 100px;
 }
 
 .container2 {
   padding: 50px 500px 80px 550px;
   background-color: #ff661f14;
 }
+
+.container22 {
+  padding: 50px 500px 80px 550px;
+  background-color: #fff;
+}
+
 h5 {
   font-size: 18px;
   text-align: left;
@@ -487,5 +533,190 @@ h6 {
 }
 .container2 p {
   font-size: 13px;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+.News {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "PhotoNews1 Info1"
+    "PhotoNews2 Info2"
+    "PhotoNews3 Info3";
+}
+.News {
+  padding: 80px 500px 80px 550px;
+  background-color: #fff;
+}
+.PhotoNews1 {
+  grid-area: PhotoNews1;
+  border: 1px solid rgb(196, 196, 196);
+  height: 300px;
+}
+
+.PhotoNews2 {
+  grid-area: PhotoNews2;
+  border: 1px solid rgb(196, 196, 196);
+  height: 300px;
+}
+
+.PhotoNews3 {
+  grid-area: PhotoNews3;
+  border: 1px solid rgb(196, 196, 196);
+  height: 300px;
+}
+
+.Info1 {
+  grid-area: Info1;
+  border: 1px solid rgb(196, 196, 196);
+  padding: 20px;
+}
+
+.Info2 {
+  grid-area: Info2;
+  border: 1px solid rgb(196, 196, 196);
+  padding: 20px;
+}
+
+.Info3 {
+  grid-area: Info3;
+  border: 1px solid rgb(196, 196, 196);
+  padding: 20px;
+}
+
+.Info1 p {
+  font-size: 14px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+}
+.Info1 h2 {
+  font-size: 12px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+}
+.Info1 h3 {
+  font-size: 10px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+  margin-top: 0;
+}
+
+.Info2 p {
+  font-size: 14px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+}
+.Info2 h2 {
+  font-size: 12px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+}
+.Info2 h3 {
+  font-size: 10px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+  margin-top: 0;
+}
+
+.Info3 p {
+  font-size: 14px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+}
+.Info3 h2 {
+  font-size: 12px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+}
+.Info3 h3 {
+  font-size: 10px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+  margin-top: 0;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+}
+
+form {
+  width: 400px;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+input,
+textarea {
+  font-size: 12px;
+  text-align: left;
+  font-family: "Noto Sans Display", sans-serif;
+  padding-left: 10px;
+  width: 400px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgb(182, 180, 180);
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #ff671f;
+  outline: none;
+}
+
+textarea {
+  vertical-align: top;
+  resize: none;
+  height: 8em;
+  padding-top: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form .button {
+  margin-top: 0px;
+}
+::placeholder {
+  font-size: 12px;
+  color: rgb(196, 196, 196);
+}
+
+form button {
+  margin-top: 40px;
+  padding: 10px 50px;
+  background-color: #ff671f;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-bottom: 30px;
+  outline: none;
+  font-size: 16px;
+  font-family: "Noto Sans KR", serif;
+  cursor: pointer;
+}
+form button:hover {
+  background: #ff661f00;
+  border: 1px solid #ff671f;
+  color: #ff671f;
+}
+
+.adresse {
+  padding-left: 100px;
+  vertical-align: top;
+}
+.adresse h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.adresse h4 {
+  font-size: 14px;
+  text-align: left;
   font-family: "Noto Sans Display", sans-serif;
 }
